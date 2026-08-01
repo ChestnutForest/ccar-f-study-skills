@@ -68,6 +68,54 @@ D. <選択肢>
 
 ---
 
+## 英語で出題するための定型表現（v10.2）
+
+公式サンプル問題12問から抽出した言い回し。**シナリオ・設問・選択肢はこれらを使って英語で書く。**
+
+### シナリオの書き出し
+
+| 表現 | 用法 |
+|---|---|
+| `Production data shows that ...` | 本番データで判明した症状を示す |
+| `Production logs show the agent frequently ...` | ログから読み取れる頻出の挙動 |
+| `Your agent achieves 55% first-contact resolution, well below the 80% target.` | 数値と目標のギャップ |
+| `During testing, you observe that ...` | テスト中の観察 |
+| `After running the system on ..., you observe that ...` | 実行後の結果 |
+| `You are building / You are using / You are integrating ...` | 状況設定 |
+| `Your pipeline script runs ... but the job hangs indefinitely.` | 具体的な障害 |
+
+**必ず具体的な数値を入れる**：`in 12% of cases` / `55% first-contact resolution` / `14 files` / `2-3 round trips` / `increases latency by 40%` / `85% of these verifications`。
+
+### 設問の型
+
+| 表現 | 問うている軸 |
+|---|---|
+| `What change would most effectively address this reliability issue?` | 確実性 |
+| `What's the most effective first step to improve ...?` | 比例性（`first step` が鍵） |
+| `What is the most likely root cause?` | 根本原因 |
+| `What's the most effective approach to reduce overhead while maintaining reliability?` | 比例性（トレードオフ） |
+| `Which approach should you take?` | 判断全般 |
+| `Where should you create this command file?` | 事実確認 |
+| `How should you evaluate this proposal?` | 比例性 |
+| `How should you restructure the review?` | 根本原因 |
+
+**`most effectively` / `most likely` / `first step` といった限定語が判断の軸を決める**。特に `first step` は「まず何をするか」を問うので、過剰設計を排除する比例性の問題になる。
+
+### 選択肢の書き方
+
+動詞の原形または動名詞で始め、4つの長さを揃える。
+
+- `Add a programmatic prerequisite that blocks ... until ...`
+- `Enhance the system prompt to state that ...`
+- `Implement a routing classifier that analyzes ...`
+- `Switch both workflows to batch processing with status polling ...`
+
+### 出題文の解説（v10.2）
+
+正解と誤答の理由を書いた後、**シナリオと設問の英文**に対して【スラッシュリーディング】【英語の型と語法】【語彙・語法メモ】を追記する。出題文は試験特有の言い回しの塊なので、それ自体が読解教材になる。選択肢A〜Dは分量が多いため解説対象に含めない（重要な語法があれば語彙メモで触れる）。
+
+---
+
 ## 作問時のチェックリスト
 
 - [ ] 軸（確実性／根本原因／比例性）を1つ決めたか
