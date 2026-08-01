@@ -7,7 +7,7 @@ Thumbs.db
 .idea/
 *.swp
 
-# Claude Code のローカル設定（個人環境専用・共有しない）
+# Claude Code のローカル設定
 .claude/settings.local.json
 
 # 学習ログを公開したくない場合は次行のコメントを外す
