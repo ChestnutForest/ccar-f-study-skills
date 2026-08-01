@@ -107,10 +107,18 @@ cp -r skills/learning-asset ~/.claude/skills/
 - [Create plugins](https://code.claude.com/docs/en/plugins) — プラグインとして配布する場合
 - [anthropics/skills](https://github.com/anthropics/skills) — 公式スキル集
 
-## 底本
+## 底本と第三者の著作物について
 
-動詞型の分類は A.S. ホーンビー『第2版 英語の型と語法』（伊藤健三 訳注、オックスフォード大学出版局）に依拠している。試験範囲の対応づけは Anthropic 公式の『Claude Certified Architect – Foundations Exam Guide』Version 1.0 に基づく。
+**動詞型の分類体系**は A.S. ホーンビー『第2版 英語の型と語法 Guide to Patterns and Usage in English』（伊藤健三 訳注、オックスフォード大学出版局）に依拠している。VP1〜VP25、NP1〜NP3、AP1〜AP3 という番号体系と、各型が指す文構造は同書のものである。
+
+`references/hornby-patterns.md` および `hornby-tenses.md` に収録しているのは、**型番号と、その型が指す文構造の要約、および型ごとに1〜2文の短い例文**である。例文は `The moon rose.` `This is a book.` のように、英文法書に広く共通して現れる汎用的な短文に限っている。原典の解説文や、まとまった分量の記述は転載していない。
+
+とはいえ、**分類体系そのものは同書に由来する**。このリポジトリのライセンスは筆者が書いた部分（スキルの設計、判断基準、出力フォーマットの定義、日本語による説明）に対するものであり、ホーンビーの分類体系や原典の記述に対して何らかの権利を主張するものではない。体系を体系として学びたい方は原典を参照されたい。
+
+**試験範囲の対応づけ**は Anthropic 公式の『Claude Certified Architect – Foundations Exam Guide』Version 1.0 に基づく。`references/ccar-f-blueprint.md` `ccar-f-keywords.md` `question-design.md` は、同ガイドの記述を要約・再構成したものである。試験問題そのものは含まない（公式サンプル問題の分析は、正解の判断軸を抽出した要約に留めている）。
 
 ## ライセンス
 
-MIT License とするか、私的利用に留めるかは公開範囲に応じて決める。ホーンビーの型番号体系そのものは書籍の分類に依拠しているため、原典の記述を大量に転載する形での公開は避ける。
+[MIT License](LICENSE) — Copyright (c) 2026 Kazuyuki Kuribayashi
+
+上記「底本と第三者の著作物について」のとおり、このライセンスが及ぶのは筆者が書いた部分（スキルの設計、判断基準、出力フォーマットの定義、日本語による説明）に限られる。

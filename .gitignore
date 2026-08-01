@@ -2,13 +2,13 @@
 .DS_Store
 Thumbs.db
 
-# エディタ
+# Editor
 .vscode/
 .idea/
 *.swp
 
-# Claude Code のローカル設定
+# Claude Code local settings
 .claude/settings.local.json
 
-# 学習ログを公開したくない場合は次行のコメントを外す
+# Uncomment to exclude study logs
 # logs/
