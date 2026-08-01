@@ -36,12 +36,15 @@ CCAR-F の学習では、英語の一次資料を読む作業と、読んだ内�
 │       ├── SKILL.md
 │       └── references/
 │           └── ccar-f-blueprint.md
+├── prompts/
+│   └── notebooklm-slide-prompt.md      # 学習ログからスライドを生成するプロンプト
 └── logs/
     ├── ccaf-2026-07-28.md
-    └── ccaf-2026-07-31.md
+    ├── ccaf-2026-07-31.md
+    └── ccaf-2026-08-01.md
 ```
 
-`skills/` にスキル本体、`logs/` に日次の学習ログを置く。ログを同じリポジトリに入れるかは運用次第で、学習内容を公開したくない場合は別リポジトリに分けるか `.gitignore` に加える。
+`skills/` にスキル本体、`prompts/` に NotebookLM へ渡すプロンプト、`logs/` に日次の学習ログを置く。ログを同じリポジトリに入れるかは運用次第で、学習内容を公開したくない場合は別リポジトリに分けるか `.gitignore` に加える。
 
 ## english-parsing の出力構成
 
