@@ -14,6 +14,7 @@ CCAR-F の学習では、英語の一次資料を読む作業と、読んだ内�
 |---|---|---|
 | `english-parsing` | v10.3 | 英文を10ブロック構成で精読する。ホーンビーの動詞型（VP1〜VP25）による構文分析、米式スペルへの統一、CCAR-F の5ドメインへの対応づけまで行う |
 | `learning-asset` | v3.2 | その日の学びを日次ファイル `ccaf-YYYY-MM-DD.md` に構造化する。NotebookLM のソースとして投入し、RAG で検索できる粒度で書き出す |
+| `question-archive` | v1.0 | 【10】で生成した想定問題を1問1ファイルで `questions/` に蓄積する。「さきほどの想定問題を commit/push して」で起動 |
 
 ## ディレクトリ構成
 
@@ -33,20 +34,26 @@ CCAR-F の学習では、英語の一次資料を読む作業と、読んだ内�
 │   │       ├── question-design.md          # 想定問題の作り方・公式12問の分析
 │   │       ├── anthropic-skills-catalog.md # anthropics/skills の公式スキル一覧
 │   │       └── changelog-archive.md        # v9.0 以前の変更履歴
-│   └── learning-asset/
-│       ├── SKILL.md
-│       └── references/
-│           └── ccar-f-blueprint.md
+│   ├── learning-asset/
+│   │   ├── SKILL.md
+│   │   └── references/
+│   │       └── ccar-f-blueprint.md
+│   └── question-archive/
+│       └── SKILL.md
 ├── prompts/
 │   └── notebooklm-slide-prompt.md      # 学習ログからスライドを生成するプロンプト
+├── questions/                          # 想定問題のアーカイブ（1問1ファイル）
+│   ├── README.md                       # 問題一覧・判断軸の分布
+│   └── question-2026-08-04-01.md
 └── logs/
     ├── ccaf-2026-07-28.md
     ├── ccaf-2026-07-31.md
     ├── ccaf-2026-08-01.md
-    └── ccaf-2026-08-02.md
+    ├── ccaf-2026-08-02.md
+    └── ccaf-2026-08-04.md
 ```
 
-`skills/` にスキル本体、`prompts/` に NotebookLM へ渡すプロンプト、`logs/` に日次の学習ログを置く。ログを同じリポジトリに入れるかは運用次第で、学習内容を公開したくない場合は別リポジトリに分けるか `.gitignore` に加える。
+`skills/` にスキル本体、`prompts/` に NotebookLM へ渡すプロンプト、`questions/` に想定問題のアーカイブ、`logs/` に日次の学習ログを置く。ログを同じリポジトリに入れるかは運用次第で、学習内容を公開したくない場合は別リポジトリに分けるか `.gitignore` に加える。
 
 ## english-parsing の出力構成
 
